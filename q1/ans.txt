@@ -1,0 +1,28 @@
+
+1. Statement to create database and tables.
+CREATE DATABASE IF NOT EXISTS devicereport;
+
+CREATE TABLE device (
+	ID INT NOT NULL,
+	name VARCHAR(100),
+	PRIMARY KEY (ID)
+);
+
+CREATE TABLE report (
+    ID INT NOT NULL,
+    Device_ID INT,
+    FOREIGN KEY (Device_ID)
+        REFERENCES device(ID)
+        ON DELETE cascade,
+	Location VARCHAR(500) NOT NULL,
+	DateCreated TIMESTAMP NOT null
+        DEFAULT CURRENT_TIMESTAMP,
+	PRIMARY KEY (ID)
+);
+
+2. Insert sample data into table.
+INSERT INTO report (ID, Device_ID, Location) VALUES (1, 1, 'Finland');
+
+3. Select data from both tables by joining with foreign key.
+SELECT * FROM device LEFT JOIN report ON device.ID = report.Device_ID
+
