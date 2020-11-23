@@ -1,0 +1,29 @@
+Cross Origin Resource Sharing.
+
+By default browsers prevent AJAX request from onother origin
+ HTTP requests that are initiated from scripts running in the browser for the security purpose.
+To access the released apis from different domains and use in our own domain,
+we need to enable the cors policy.
+
+
+In this context, "other origins" means the URL being accessed differs from the location that the JavaScript is running from, by having:
+
+a different scheme (HTTP or HTTPS)
+a different domain
+a different port
+
+Whenever the REST API's resources receive non-simple cross-origin HTTP requests,
+we need to enable CORS support.
+
+The CORS standard is needed because it allows servers to specify not only who can access the assets,
+ but also how they can be accessed.
+
+Enable:
+Add config.EnableCORS in WebAPIConfig.
+Add [EnableCORS] attribute to the Controller class
+Access-Control-Allow-Origin: * for all
+
+https://www.npmjs.com/package/cors
+This CORS is a node.js package for providing a Connect/Express middleware that can be used to
+enable CORS with various options.
+
