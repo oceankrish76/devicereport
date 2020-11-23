@@ -13,4 +13,11 @@ Make sure you are inside the laravelApp project directory then run the following
 1. composer install
 2. php artisan track
 
+Make sure there is Mysql Database added in .env file as
+DB_DATABASE=devicereport
+DB_USERNAME=root
+DB_PASSWORD=Exu123
+
+<img src="https://i.ibb.co/gTsNK8k/Screenshot-2020-11-23-at-13-36-33.png" alt="data">
+<img src="https://i.ibb.co/16yZQgN/Screenshot-2020-11-23-at-11-43-44.png" alt="data">
 </p>
