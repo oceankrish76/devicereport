@@ -16,8 +16,9 @@ const ReadData = () => {
     //const response = res.json()
 
     const datavalue = await res.json()
-    //const val = Object.keys(data).map(item => item.ID)
     console.table(datavalue)
+
+    // data state
     setData(datavalue)
   }
   useEffect(() => {
