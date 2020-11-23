@@ -20,6 +20,8 @@ CREATE TABLE report (
 	PRIMARY KEY (ID)
 );
 
+Primary Key is not asked to add so it's not included here.
+
 2. Insert sample data into table.
 INSERT INTO report (ID, Device_ID, Location) VALUES (1, 1, 'Finland');
 

@@ -11,5 +11,5 @@ app.use(bodyParser.urlencoded({
 const routes = require('./routes/routes.js')(app, fs);
 
 const server = app.listen(3002, () => {
-  console.log('listening on port %s...', server.address().port);
+  console.log('Server listening on port %s...', server.address().port);
 });
