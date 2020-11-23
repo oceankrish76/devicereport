@@ -13,3 +13,9 @@
 * npm run dev
 <img src="https://i.ibb.co/gTsNK8k/Screenshot-2020-11-23-at-13-36-33.png" alt="data">
 <img src="https://i.ibb.co/16yZQgN/Screenshot-2020-11-23-at-11-43-44.png" alt="data">
+
+
+* Remember to add in client folder's package.json
+* "proxy": "http://localhost:3002"
+
+In this project server is runnig on port 3002 as defined in server.js
