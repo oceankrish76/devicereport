@@ -1,18 +1,18 @@
 const dataRoutes = (app, fs) => {
 
   // variables
-  const dataPath = './data/data.json';
+  const dataPath = './data/data.json'
 
   // READ
   app.get('/data', (req, res) => {
     fs.readFile(dataPath, 'utf8', (err, data) => {
       if (err) {
-        throw err;
+        throw err
       }
 
-      res.send(JSON.parse(data));
-    });
-  });
+      res.send(JSON.parse(data))
+    })
+  })
 }
 
 module.exports = dataRoutes

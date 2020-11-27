@@ -3,7 +3,7 @@
 * 1. Check package.json dependencies that I have used.
 * 2. React, Express, Node, Fetch Async
 * 3. Routing
-* 4. materialize css
+* 4. materialize css, semantic-ui react table
 
 # How to run the project:
 
